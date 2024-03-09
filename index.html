@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="https://i.pngimg.me/thumb/f/720/comhiclipartdvrth.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><i class="fab fa-vimeo-v"></i>ishal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vishal Bhagat</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Vishalimg.jpg" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"><i class="fab fa-vimeo-v"></i>ishal Kumar</h1>
+        <p class="section__text__p2">Software Engineer & Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Resume2024.pdf')">Download CV <i class="fa-solid fa-file-pdf"></i></button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info <i class="fa-solid fa-address-card"></i>
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vishal-kumar-931b44256'"/>
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <!-- <p class="section__text__p1">Get To Know More</p> -->
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="Vishalimg.jpg" alt="Profile picture"
+            class="about-pic"/>
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"/>
+              <h3>Experience</h3>
+              <p>No Experience(Fresher) <br>Software Engineer <br> Frontend Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"/>
+              <h3>Education</h3>
+              <p>10th & 12th <br>Pursuing BCA <br>MDU</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey there! My name is Vishal Kumar & and I'm from Bihar. 
+              I am Frontend Web Developer And I made a project 
+              E-com site using HTML, CSS and JavaScript, And 
+              TicTacToe game using HTML, CSS & Javascript.
+              I have complete my four week internship Program.
+              I want to be Software Developer, So I focus Java with DSA.
+              And also I have done my one project( Simple ATM Simulator) in Java.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png" alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+      <!-- <p class="section__text__p1">Explore My</p> -->
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C lang</h3>
+                 
+                </div>
+              </article> -->
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C lang</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="ecommerce.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-commerce site</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vishal9128/vishal-kr.git'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+              <a href="">Try</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="createMarksheet.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MarkSheet Maker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vishal9128/vishal123.git'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+              <a href="marksheet.html">Try</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="tictac.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vishal9128/tic-tac-toe.git'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'">
+                <a href="http://127.0.0.1:5500/tic-tac-toe/index.html"></a>
+                Live Demo
+              </button> -->
+              
+              <a href="tictactoe.html">Try</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <!-- <p class="section__text__p1">Get in Touch</p> -->
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <!-- <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          /> -->
+          <p><a href="mailto:vishal887700@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <div class="contact-info-container">
+          <!-- <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          /> -->
+          <p><a href="https://www.linkedin.com/in/vishal-kumar-931b44256"><i class="fa-brands fa-linkedin"></i></a></p>
+        </div>
+        <div class="contact-info-container">
+          <p><a href="https://www.instagram.com/vishal_bhagat_88?igsh=MTY1cnhsYmJoNjQ4ag=="><i class="fa-brands fa-square-instagram"></i></i></a></p>
+        </div>
+        <div class="contact-info-container">
+          <p><a href="https://www.facebook.com/profile.php?id=100023889545310&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></p>
+        </div>
+        <div class="contact-info-container">
+          <p><a href="https://www.facebook.com/profile.php?id=100023889545310&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-messenger"></i></a></p>
+        </div>
+        <div class="contact-info-container">
+          <p><a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024. All Rights reserved.<br> Made by Vishal</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
